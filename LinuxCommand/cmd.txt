@@ -14,3 +14,19 @@ awk 'NR!=1{print $1}' name
 awk '{print $1,$3}' FS="," OFS="+" name.csv
 awk '$1 !~/Deep/' name.csv
 awk '$1 ~/Deep/' name.csv
+
+
+sed
+-
+sed -e '1d' test.txt
+sed -e '1,3d' test.txt
+sed -e '/o/d' test.txt
+sed -e '/o/!d' test.txt
+sed -e '/o/,/u/d' test.txt
+sed -e '2c/just do it' test.txt
+sed -e '2,4c/I can do it' test.txt
+sed -e '1,3s/Neha/Zach/' name
+sed -e '1,10s/conf/cccc/i' server-config.xml
+sed -e '1,10s/conf/Cccc/i w2file' server-config.xml
+sed -e '1,2i/Zach/' test.txt
+sed -e '/h/i/Zach/' test.txt
