@@ -1,0 +1,16 @@
+xargx
+-
+ls *.js.*|xargs -t ls -al
+ls *.js | xargs -t -I '{}' mv {} {}.backup
+ls *.js.*|xargs -t ls -al
+ls *.js | xargs -t -n2 ls -al
+find . -name '*.css' -print0 | xargs -0 -t ls -al
+
+awk
+-
+awk -F ',' '{print $2}' name.csv
+awk -F '=\|,' '{print $2}' name.csv
+awk 'NR!=1{print $1}' name
+awk '{print $1,$3}' FS="," OFS="+" name.csv
+awk '$1 !~/Deep/' name.csv
+awk '$1 ~/Deep/' name.csv
