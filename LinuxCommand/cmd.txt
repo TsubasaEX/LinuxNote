@@ -15,7 +15,6 @@ awk '{print $1,$3}' FS="," OFS="+" name.csv
 awk '$1 !~/Deep/' name.csv
 awk '$1 ~/Deep/' name.csv
 
-
 sed
 -
 sed -e '1d' test.txt
@@ -30,3 +29,19 @@ sed -e '1,10s/conf/cccc/i' server-config.xml
 sed -e '1,10s/conf/Cccc/i w2file' server-config.xml
 sed -e '1,2i/Zach/' test.txt
 sed -e '/h/i/Zach/' test.txt
+
+whereis
+-
+whereis ifconfig
+whereis helm
+whereis -ls
+
+locate
+-
+locate *.yaml
+locate /root/git
+
+find
+-
+find /root/zach -name name.csv
+find  /root -name name.csv
