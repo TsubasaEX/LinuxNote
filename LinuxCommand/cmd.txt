@@ -38,6 +38,7 @@ whereis -ls
 
 locate
 -
+updatedb 
 locate *.yaml
 locate /root/git
 
