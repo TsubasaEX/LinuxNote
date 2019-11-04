@@ -46,3 +46,7 @@ find
 -
 find /root/zach -name name.csv
 find  /root -name name.csv
+
+source
+-
+source ~/.bashrc = . ~/.bashrc
