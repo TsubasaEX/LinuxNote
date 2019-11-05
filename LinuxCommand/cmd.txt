@@ -50,3 +50,25 @@ find  /root -name name.csv
 source
 -
 source ~/.bashrc = . ~/.bashrc
+
+passwd
+-
+passwd zach
+passwd -S
+
+file
+-
+file worker-1.0.104.20191005.jar
+
+which
+-
+which ls
+which passwd
+
+wc
+-
+cat calico-config.yml |wc
+
+journalctl
+-
+journalctl --unit=kubelet -n 100
