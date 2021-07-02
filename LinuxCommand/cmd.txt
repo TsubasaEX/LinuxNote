@@ -72,3 +72,11 @@ cat calico-config.yml |wc
 journalctl
 -
 journalctl --unit=kubelet -n 100
+
+git
+-
+git stash pop
+git stash save "message"
+git stash apply stash{0}
+git stash drop stash{0}
+
